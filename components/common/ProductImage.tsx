@@ -11,7 +11,7 @@ interface ProductImageProps {
 }
 
 const ProductImage = ({ productId, category, className = '', size = 'medium' }: ProductImageProps) => {
-  const getProductImage = (productId: string, categoryName: string) => {
+  const getProductImage = (productId: string) => {
     // Use only the 2 specified images: authbg1.svg, authbg2.svg
     const availableImages = ['/authbg1.svg', '/authbg2.svg'];
     
@@ -36,7 +36,7 @@ const ProductImage = ({ productId, category, className = '', size = 'medium' }: 
     }
   };
 
-  const imageSrc = getProductImage(productId, category);
+  const imageSrc = getProductImage(productId);
   const sizeClasses = getSizeClasses(size);
 
   return (

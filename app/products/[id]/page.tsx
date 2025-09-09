@@ -10,8 +10,6 @@ import {
   Plus,
   Minus,
   CheckCircle,
-  ArrowLeft,
-  ArrowRight,
   ThumbsUp,
   MessageCircle,
   User
@@ -20,8 +18,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { useCartStore } from '@/lib/store';
 import { products } from '@/data/products.json';
-import PlaceholderImage from '@/components/common/PlaceholderImage';
-import ProductImage from '@/components/common/ProductImage';
 import ProductPageImage from '@/components/common/ProductPageImage';
 import ProductCard from '@/components/product/ProductCard';
 import Layout from '@/components/layout/Layout';
@@ -29,9 +25,9 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 interface ProductPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 const ProductPageClient = ({ productId }: { productId: string }) => {
