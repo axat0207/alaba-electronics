@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 
 const PromotionalBanner = () => {
-  const taglines = [
+  const taglines = [    
     "Up to 60% off | Trending products from Emerging Businesses",
     "Free Shipping | On orders above ₦50,000",
     "New Arrivals | Latest technology at your fingertips",

@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight, Star, ShoppingCart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { products } from '@/data/products.json';
-import PlaceholderImage from './PlaceholderImage';
+import Image from 'next/image';
 
 interface CarouselProps {
   items?: typeof products;
@@ -152,9 +152,13 @@ const Carousel = ({
                   <div className="flex items-center justify-center">
                     <div className="relative w-full max-w-md lg:max-w-lg">
                       <div className="aspect-square bg-white rounded-2xl shadow-2xl p-8">
-                        <PlaceholderImage
-                          category={items[currentIndex].category}
-                          className="w-full h-full"
+                        <Image
+                          src="/bannerimg.svg"
+                          alt="Product showcase"
+                          width={400}
+                          height={400}
+                          className="w-full h-full object-contain"
+                          priority={false}
                         />
                       </div>
                     </div>

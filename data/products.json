@@ -58,9 +58,9 @@
       "isNew": true,
       "isFeatured": true,
       "images": [
-        "/images/products/pos-terminal-1.jpg",
-        "/images/products/pos-terminal-2.jpg",
-        "/images/products/pos-terminal-3.jpg"
+        "/cod.svg",
+        "/gpay.svg",
+        "/visa.svg"
       ],
       "specifications": {
         "Screen Size": "15.6 inch",
@@ -93,8 +93,8 @@
       "isNew": false,
       "isFeatured": true,
       "images": [
-        "/images/products/mobile-pos-1.jpg",
-        "/images/products/mobile-pos-2.jpg"
+        "/gpay.svg",
+        "/paypal.svg"
       ],
       "specifications": {
         "Tablet Size": "10.1 inch",
@@ -127,9 +127,9 @@
       "isNew": false,
       "isFeatured": true,
       "images": [
-        "/images/products/desktop-1.jpg",
-        "/images/products/desktop-2.jpg",
-        "/images/products/desktop-3.jpg"
+        "/cpu.svg",
+        "/keyboard.svg",
+        "/mouse.svg"
       ],
       "specifications": {
         "Processor": "Intel Core i7-12700",
@@ -162,8 +162,8 @@
       "isNew": true,
       "isFeatured": true,
       "images": [
-        "/images/products/laptop-1.jpg",
-        "/images/products/laptop-2.jpg"
+        "/cpu.svg",
+        "/keyboard.svg"
       ],
       "specifications": {
         "Screen Size": "15.6 inch FHD",
@@ -197,8 +197,8 @@
       "isNew": false,
       "isFeatured": false,
       "images": [
-        "/images/products/cash-register-1.jpg",
-        "/images/products/cash-register-2.jpg"
+        "/cod.svg",
+        "/wallet.svg"
       ],
       "specifications": {
         "Display": "2x 20-character LCD",
@@ -231,8 +231,8 @@
       "isNew": false,
       "isFeatured": false,
       "images": [
-        "/images/products/printer-1.jpg",
-        "/images/products/printer-2.jpg"
+        "/printer.svg",
+        "/keyboard.svg"
       ],
       "specifications": {
         "Print Speed": "25 ppm (black), 20 ppm (color)",
@@ -265,8 +265,8 @@
       "isNew": true,
       "isFeatured": true,
       "images": [
-        "/images/products/money-counter-1.jpg",
-        "/images/products/money-counter-2.jpg"
+        "/wallet.svg",
+        "/cod.svg"
       ],
       "specifications": {
         "Speed": "1000 notes/minute",
@@ -299,8 +299,8 @@
       "isNew": false,
       "isFeatured": false,
       "images": [
-        "/images/products/office-chair-1.jpg",
-        "/images/products/office-chair-2.jpg"
+        "/keyboard.svg",
+        "/mouse.svg"
       ],
       "specifications": {
         "Material": "Mesh back, PU seat",
@@ -333,8 +333,8 @@
       "isNew": true,
       "isFeatured": false,
       "images": [
-        "/images/products/standing-desk-1.jpg",
-        "/images/products/standing-desk-2.jpg"
+        "/keyboard.svg",
+        "/cpu.svg"
       ],
       "specifications": {
         "Desktop Size": "24 x 20 inches",
@@ -367,8 +367,8 @@
       "isNew": false,
       "isFeatured": true,
       "images": [
-        "/images/products/restaurant-pos-1.jpg",
-        "/images/products/restaurant-pos-2.jpg"
+        "/cod.svg",
+        "/gpay.svg"
       ],
       "specifications": {
         "Terminals": "2 POS terminals",

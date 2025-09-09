@@ -79,12 +79,12 @@ const Header = () => {
           : 'bg-background'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-16 gap-4">
             {/* Logo */}
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="flex items-center space-x-2"
+              className="flex items-center space-x-2 flex-shrink-0"
             >
               <Link href="/" className="flex items-center space-x-2">
                 <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
@@ -97,36 +97,17 @@ const Header = () => {
               </Link>
             </motion.div>
 
-            {/* Search Bar */}
-            <motion.div 
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="hidden md:flex flex-1 max-w-lg mx-8"
-            >
-              <div className="relative w-full">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                <Input
-                  type="text"
-                  placeholder="Search for products, brands, categories..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="pl-10 pr-4 py-2 w-full rounded-full border-2 focus:border-primary transition-colors"
-                />
-              </div>
-            </motion.div>
-
-            {/* Navigation Links */}
+            {/* Navigation Links - Left Side */}
             <motion.nav 
-              initial={{ opacity: 0, x: 20 }}
+              initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.2 }}
-              className="hidden lg:flex items-center space-x-8"
+              transition={{ delay: 0.1 }}
+              className="hidden lg:flex items-center space-x-6"
             >
               <MegaMenu />
               <Link
                 href="/"
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors whitespace-nowrap"
               >
                 Home
               </Link>
@@ -134,12 +115,31 @@ const Header = () => {
               <AccessoriesMenu />
             </motion.nav>
 
+            {/* Search Bar - Center */}
+            <motion.div 
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="hidden md:flex flex-1 max-w-md mx-4"
+            >
+              <div className="relative w-full">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                <Input
+                  type="text"
+                  placeholder="Search products..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="pl-10 pr-4 py-2 w-full rounded-full border-2 focus:border-primary transition-colors"
+                />
+              </div>
+            </motion.div>
+
             {/* Action Buttons */}
             <motion.div 
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 }}
-              className="flex items-center space-x-2"
+              className="flex items-center space-x-3 flex-shrink-0"
             >
               {/* Wishlist */}
               <Button
