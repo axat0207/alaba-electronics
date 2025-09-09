@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { 
-  CreditCard, 
+  Building2, 
   Phone, 
   Mail, 
   MapPin, 
@@ -118,15 +118,15 @@ const Footer = () => {
             >
               <Link href="/" className="flex items-center space-x-2 mb-4">
                 <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                  <CreditCard className="h-6 w-6 text-primary-foreground" />
+                  <Building2 className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <h2 className="text-xl font-bold text-foreground">Alaba Electronics Hub</h2>
+                  <h2 className="text-xl font-bold text-foreground">CVentures</h2>
                   <p className="text-sm text-muted-foreground tracking-tight">Electronics & Office Equipment</p>
                 </div>
               </Link>
               <p className="text-muted-foreground mb-6 max-w-md">
-                Your trusted partner for quality electronics and office equipment in Alaba International Market. 
+                Your trusted partner for quality electronics and office equipment from emerging businesses. 
                 We provide reliable solutions for businesses of all sizes.
               </p>
               
@@ -138,11 +138,11 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-4 w-4 text-primary" />
-                  <span className="text-sm text-foreground">info@alabaelectronics.com</span>
+                  <span className="text-sm text-foreground">info@cventures.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-4 w-4 text-primary" />
-                  <span className="text-sm text-foreground">Alaba International Market, Lagos</span>
+                  <span className="text-sm text-foreground">Lagos, Nigeria</span>
                 </div>
               </div>
             </motion.div>
@@ -245,7 +245,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
               <p className="text-sm text-muted-foreground">
-                © {currentYear} Alaba Electronics Hub. All rights reserved.
+                © {currentYear} CVentures. All rights reserved.
               </p>
               <div className="flex space-x-4">
                 {footerLinks.legal.map((link) => (

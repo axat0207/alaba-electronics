@@ -10,12 +10,7 @@ import {
   User, 
   Menu, 
   X,
-  CreditCard,
-  Laptop,
-  Calculator,
-  Printer,
-  Banknote,
-  Briefcase,
+  Building2,
   Phone,
   Mail,
   MapPin
@@ -33,7 +28,9 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { useCartStore, useWishlistStore, useUserStore } from '@/lib/store';
-import { categories } from '@/data/products.json';
+import MegaMenu from './MegaMenu';
+import BrandsMenu from './BrandsMenu';
+import AccessoriesMenu from './AccessoriesMenu';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -52,17 +49,6 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const getCategoryIcon = (iconName: string) => {
-    const icons: Record<string, React.ComponentType<{ className?: string }>> = {
-      CreditCard,
-      Laptop,
-      Calculator,
-      Printer,
-      Banknote,
-      Briefcase,
-    };
-    return icons[iconName] || Briefcase;
-  };
 
   return (
     <>
@@ -76,23 +62,23 @@ const Header = () => {
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="h-4 w-4" />
-              <span>info@alabaelectronics.com</span>
+              <span>info@cventures.com</span>
             </div>
           </div>
           <div className="flex items-center space-x-2">
             <MapPin className="h-4 w-4" />
-            <span>Alaba International Market, Lagos</span>
+            <span>Lagos, Nigeria</span>
           </div>
         </div>
       </div>
 
       {/* Main Header */}
-      <header className={`sticky top-0 z-50 transition-all duration-300 ${
+      <header className={`sticky top-0 z-40 transition-all duration-300 ${
         isScrolled 
           ? 'bg-background/95 backdrop-blur-md shadow-lg border-b' 
           : 'bg-background'
       }`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <motion.div 
@@ -102,10 +88,10 @@ const Header = () => {
             >
               <Link href="/" className="flex items-center space-x-2">
                 <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                  <CreditCard className="h-6 w-6 text-primary-foreground" />
+                  <Building2 className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <div className="hidden sm:block">
-                  <h1 className="text-xl font-bold text-foreground">Alaba Electronics Hub</h1>
+                  <h1 className="text-xl font-bold text-foreground">CVentures</h1>
                   <p className="text-xs text-muted-foreground tracking-tight">Electronics & Office Equipment</p>
                 </div>
               </Link>
@@ -137,19 +123,15 @@ const Header = () => {
               transition={{ delay: 0.2 }}
               className="hidden lg:flex items-center space-x-8"
             >
-              {categories.slice(0, 4).map((category) => {
-                const IconComponent = getCategoryIcon(category.icon);
-                return (
-                  <Link
-                    key={category.id}
-                    href={`/categories/${category.id}`}
-                    className="flex items-center space-x-1 text-sm font-medium text-foreground hover:text-primary transition-colors"
-                  >
-                    <IconComponent className="h-4 w-4" />
-                    <span>{category.name}</span>
-                  </Link>
-                );
-              })}
+              <MegaMenu />
+              <Link
+                href="/"
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              >
+                Home
+              </Link>
+              <BrandsMenu />
+              <AccessoriesMenu />
             </motion.nav>
 
             {/* Action Buttons */}
@@ -271,20 +253,20 @@ const Header = () => {
               className="lg:hidden border-t bg-background"
             >
               <div className="px-4 py-4 space-y-4">
-                {categories.map((category) => {
-                  const IconComponent = getCategoryIcon(category.icon);
-                  return (
-                    <Link
-                      key={category.id}
-                      href={`/categories/${category.id}`}
-                      className="flex items-center space-x-3 text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      <IconComponent className="h-5 w-5" />
-                      <span>{category.name}</span>
-                    </Link>
-                  );
-                })}
+                <MegaMenu />
+                <Link
+                  href="/"
+                  className="block text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Home
+                </Link>
+                <div className="py-2">
+                  <BrandsMenu />
+                </div>
+                <div className="py-2">
+                  <AccessoriesMenu />
+                </div>
               </div>
             </motion.div>
           )}
