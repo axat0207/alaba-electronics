@@ -1,0 +1,420 @@
+{
+  "categories": [
+    {
+      "id": "pos-systems",
+      "name": "POS Systems",
+      "description": "Point of Sale systems for retail and restaurants",
+      "icon": "CreditCard",
+      "color": "bg-blue-500"
+    },
+    {
+      "id": "computers",
+      "name": "Computers & Laptops",
+      "description": "Desktop computers, laptops, and workstations",
+      "icon": "Laptop",
+      "color": "bg-purple-500"
+    },
+    {
+      "id": "cash-registers",
+      "name": "Cash Registers",
+      "description": "Electronic cash registers and terminals",
+      "icon": "Calculator",
+      "color": "bg-green-500"
+    },
+    {
+      "id": "printers",
+      "name": "Printers & Scanners",
+      "description": "Printers, scanners, and multifunction devices",
+      "icon": "Printer",
+      "color": "bg-orange-500"
+    },
+    {
+      "id": "money-detectors",
+      "name": "Money Detectors",
+      "description": "Currency counting and verification machines",
+      "icon": "Banknote",
+      "color": "bg-red-500"
+    },
+    {
+      "id": "office-equipment",
+      "name": "Office Equipment",
+      "description": "General office equipment and accessories",
+      "icon": "Briefcase",
+      "color": "bg-indigo-500"
+    }
+  ],
+  "products": [
+    {
+      "id": "pos-001",
+      "name": "TouchPOS Pro Terminal",
+      "description": "Advanced touchscreen POS terminal with integrated receipt printer and cash drawer",
+      "category": "pos-systems",
+      "price": 450000,
+      "originalPrice": 550000,
+      "discount": 18,
+      "rating": 4.8,
+      "reviewCount": 127,
+      "inStock": true,
+      "isNew": true,
+      "isFeatured": true,
+      "images": [
+        "/images/products/pos-terminal-1.jpg",
+        "/images/products/pos-terminal-2.jpg",
+        "/images/products/pos-terminal-3.jpg"
+      ],
+      "specifications": {
+        "Screen Size": "15.6 inch",
+        "Processor": "Intel Core i5",
+        "RAM": "8GB DDR4",
+        "Storage": "256GB SSD",
+        "OS": "Windows 11 Pro",
+        "Connectivity": "WiFi, Bluetooth, USB 3.0",
+        "Warranty": "2 Years"
+      },
+      "features": [
+        "Touchscreen Interface",
+        "Integrated Receipt Printer",
+        "Cash Drawer Support",
+        "Barcode Scanner Compatible",
+        "Cloud Sync Capability"
+      ]
+    },
+    {
+      "id": "pos-002",
+      "name": "Mobile POS Kit",
+      "description": "Complete mobile POS solution with tablet, stand, and payment terminal",
+      "category": "pos-systems",
+      "price": 320000,
+      "originalPrice": 380000,
+      "discount": 16,
+      "rating": 4.6,
+      "reviewCount": 89,
+      "inStock": true,
+      "isNew": false,
+      "isFeatured": true,
+      "images": [
+        "/images/products/mobile-pos-1.jpg",
+        "/images/products/mobile-pos-2.jpg"
+      ],
+      "specifications": {
+        "Tablet Size": "10.1 inch",
+        "Processor": "Quad-core 2.0GHz",
+        "RAM": "4GB",
+        "Storage": "64GB",
+        "OS": "Android 11",
+        "Battery": "8 hours",
+        "Warranty": "1 Year"
+      },
+      "features": [
+        "Portable Design",
+        "Wireless Payment",
+        "Inventory Management",
+        "Receipt Printing",
+        "Easy Setup"
+      ]
+    },
+    {
+      "id": "comp-001",
+      "name": "Business Desktop Pro",
+      "description": "High-performance desktop computer for office and business applications",
+      "category": "computers",
+      "price": 280000,
+      "originalPrice": 320000,
+      "discount": 12,
+      "rating": 4.7,
+      "reviewCount": 156,
+      "inStock": true,
+      "isNew": false,
+      "isFeatured": true,
+      "images": [
+        "/images/products/desktop-1.jpg",
+        "/images/products/desktop-2.jpg",
+        "/images/products/desktop-3.jpg"
+      ],
+      "specifications": {
+        "Processor": "Intel Core i7-12700",
+        "RAM": "16GB DDR4",
+        "Storage": "512GB SSD + 1TB HDD",
+        "Graphics": "Intel UHD Graphics 770",
+        "OS": "Windows 11 Pro",
+        "Ports": "USB 3.0, HDMI, VGA, Ethernet",
+        "Warranty": "3 Years"
+      },
+      "features": [
+        "Fast Performance",
+        "Large Storage",
+        "Multiple Ports",
+        "Quiet Operation",
+        "Energy Efficient"
+      ]
+    },
+    {
+      "id": "comp-002",
+      "name": "Office Laptop Elite",
+      "description": "Professional laptop with excellent battery life and performance",
+      "category": "computers",
+      "price": 420000,
+      "originalPrice": 480000,
+      "discount": 12,
+      "rating": 4.9,
+      "reviewCount": 203,
+      "inStock": true,
+      "isNew": true,
+      "isFeatured": true,
+      "images": [
+        "/images/products/laptop-1.jpg",
+        "/images/products/laptop-2.jpg"
+      ],
+      "specifications": {
+        "Screen Size": "15.6 inch FHD",
+        "Processor": "Intel Core i5-1240P",
+        "RAM": "8GB DDR4",
+        "Storage": "256GB SSD",
+        "Graphics": "Intel Iris Xe",
+        "Battery": "8 hours",
+        "Weight": "1.8kg",
+        "Warranty": "2 Years"
+      },
+      "features": [
+        "Lightweight Design",
+        "Long Battery Life",
+        "Fast SSD Storage",
+        "HD Webcam",
+        "Backlit Keyboard"
+      ]
+    },
+    {
+      "id": "cash-001",
+      "name": "Electronic Cash Register",
+      "description": "Modern electronic cash register with receipt printer and cash drawer",
+      "category": "cash-registers",
+      "price": 180000,
+      "originalPrice": 220000,
+      "discount": 18,
+      "rating": 4.5,
+      "reviewCount": 94,
+      "inStock": true,
+      "isNew": false,
+      "isFeatured": false,
+      "images": [
+        "/images/products/cash-register-1.jpg",
+        "/images/products/cash-register-2.jpg"
+      ],
+      "specifications": {
+        "Display": "2x 20-character LCD",
+        "Keys": "78 programmable keys",
+        "Drawer": "3 compartments",
+        "Printer": "Thermal receipt printer",
+        "Memory": "1000 transactions",
+        "Power": "AC adapter included",
+        "Warranty": "1 Year"
+      },
+      "features": [
+        "Easy Programming",
+        "Receipt Printing",
+        "Tax Calculation",
+        "Daily Reports",
+        "Secure Drawer"
+      ]
+    },
+    {
+      "id": "print-001",
+      "name": "Multifunction Printer Pro",
+      "description": "All-in-one printer with print, scan, copy, and fax capabilities",
+      "category": "printers",
+      "price": 150000,
+      "originalPrice": 180000,
+      "discount": 17,
+      "rating": 4.4,
+      "reviewCount": 78,
+      "inStock": true,
+      "isNew": false,
+      "isFeatured": false,
+      "images": [
+        "/images/products/printer-1.jpg",
+        "/images/products/printer-2.jpg"
+      ],
+      "specifications": {
+        "Print Speed": "25 ppm (black), 20 ppm (color)",
+        "Resolution": "4800 x 1200 dpi",
+        "Paper Size": "A4, A5, A6, Letter",
+        "Connectivity": "WiFi, USB, Ethernet",
+        "Duplex": "Automatic",
+        "Cartridge": "High yield",
+        "Warranty": "1 Year"
+      },
+      "features": [
+        "Wireless Printing",
+        "Mobile Printing",
+        "Automatic Duplex",
+        "High Quality",
+        "Energy Star Certified"
+      ]
+    },
+    {
+      "id": "money-001",
+      "name": "Currency Counter & Detector",
+      "description": "High-speed currency counting machine with counterfeit detection",
+      "category": "money-detectors",
+      "price": 250000,
+      "originalPrice": 300000,
+      "discount": 17,
+      "rating": 4.6,
+      "reviewCount": 112,
+      "inStock": true,
+      "isNew": true,
+      "isFeatured": true,
+      "images": [
+        "/images/products/money-counter-1.jpg",
+        "/images/products/money-counter-2.jpg"
+      ],
+      "specifications": {
+        "Speed": "1000 notes/minute",
+        "Capacity": "200 notes",
+        "Detection": "UV, Magnetic, Infrared",
+        "Display": "LCD with count display",
+        "Power": "AC adapter",
+        "Size": "Compact desktop",
+        "Warranty": "2 Years"
+      },
+      "features": [
+        "Fast Counting",
+        "Counterfeit Detection",
+        "Batch Counting",
+        "Error Detection",
+        "Easy Operation"
+      ]
+    },
+    {
+      "id": "office-001",
+      "name": "Ergonomic Office Chair",
+      "description": "Professional ergonomic office chair with lumbar support and adjustable height",
+      "category": "office-equipment",
+      "price": 85000,
+      "originalPrice": 100000,
+      "discount": 15,
+      "rating": 4.3,
+      "reviewCount": 67,
+      "inStock": true,
+      "isNew": false,
+      "isFeatured": false,
+      "images": [
+        "/images/products/office-chair-1.jpg",
+        "/images/products/office-chair-2.jpg"
+      ],
+      "specifications": {
+        "Material": "Mesh back, PU seat",
+        "Height": "Adjustable 5 inches",
+        "Weight Capacity": "300 lbs",
+        "Arms": "Adjustable",
+        "Base": "5-star nylon base",
+        "Wheels": "Smooth rolling",
+        "Warranty": "1 Year"
+      },
+      "features": [
+        "Lumbar Support",
+        "Adjustable Height",
+        "Breathable Mesh",
+        "Smooth Wheels",
+        "Easy Assembly"
+      ]
+    },
+    {
+      "id": "office-002",
+      "name": "Standing Desk Converter",
+      "description": "Adjustable standing desk converter for healthier work posture",
+      "category": "office-equipment",
+      "price": 120000,
+      "originalPrice": 140000,
+      "discount": 14,
+      "rating": 4.7,
+      "reviewCount": 45,
+      "inStock": true,
+      "isNew": true,
+      "isFeatured": false,
+      "images": [
+        "/images/products/standing-desk-1.jpg",
+        "/images/products/standing-desk-2.jpg"
+      ],
+      "specifications": {
+        "Desktop Size": "24 x 20 inches",
+        "Height Range": "6-20 inches",
+        "Weight Capacity": "35 lbs",
+        "Material": "Steel frame, MDF top",
+        "Adjustment": "Gas spring",
+        "Stability": "Anti-slip base",
+        "Warranty": "1 Year"
+      },
+      "features": [
+        "Easy Height Adjustment",
+        "Stable Platform",
+        "Large Workspace",
+        "Cable Management",
+        "Quick Setup"
+      ]
+    },
+    {
+      "id": "pos-003",
+      "name": "Restaurant POS System",
+      "description": "Complete restaurant POS system with kitchen display and order management",
+      "category": "pos-systems",
+      "price": 650000,
+      "originalPrice": 750000,
+      "discount": 13,
+      "rating": 4.8,
+      "reviewCount": 89,
+      "inStock": true,
+      "isNew": false,
+      "isFeatured": true,
+      "images": [
+        "/images/products/restaurant-pos-1.jpg",
+        "/images/products/restaurant-pos-2.jpg"
+      ],
+      "specifications": {
+        "Terminals": "2 POS terminals",
+        "Kitchen Display": "15 inch touchscreen",
+        "Printer": "Thermal receipt printer",
+        "Software": "Restaurant management",
+        "Payment": "Card and cash",
+        "Network": "WiFi and Ethernet",
+        "Warranty": "2 Years"
+      },
+      "features": [
+        "Order Management",
+        "Kitchen Display",
+        "Table Management",
+        "Inventory Tracking",
+        "Sales Reports"
+      ]
+    }
+  ],
+  "featuredProducts": [
+    "pos-001",
+    "pos-002", 
+    "comp-001",
+    "comp-002",
+    "money-001"
+  ],
+  "deals": [
+    {
+      "id": "deal-001",
+      "title": "POS System Bundle",
+      "description": "Complete POS setup with terminal, printer, and cash drawer",
+      "originalPrice": 800000,
+      "salePrice": 650000,
+      "discount": 19,
+      "validUntil": "2024-12-31",
+      "products": ["pos-001", "cash-001"]
+    },
+    {
+      "id": "deal-002", 
+      "title": "Office Setup Package",
+      "description": "Desktop computer, printer, and office chair bundle",
+      "originalPrice": 550000,
+      "salePrice": 450000,
+      "discount": 18,
+      "validUntil": "2024-12-31",
+      "products": ["comp-001", "print-001", "office-001"]
+    }
+  ]
+}
