@@ -1,16 +1,23 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 interface ProductPageImageProps {
   productId: string;
   className?: string;
+  size?: 'small' | 'medium' | 'large';
+  imageIndex?: number;
 }
 
-const ProductPageImage = ({ productId, className = '' }: ProductPageImageProps) => {
-  const getProductImage = (productId: string) => {
-    // Use only the 2 specified images: authbg1.svg, authbg2.svg
+const ProductPageImage = ({ productId, className = '', size = 'large', imageIndex }: ProductPageImageProps) => {
+  const getProductImage = (productId: string, index?: number) => {
+    // If imageIndex is provided, use the thumbnail images
+    if (index !== undefined) {
+      const thumbnailImages = ['/product2.svg', '/prodcut1.svg', '/product3.svg', '/productdesc.svg'];
+      return thumbnailImages[index % thumbnailImages.length];
+    }
+    
+    // Otherwise use the main product images: authbg1.svg, authbg2.svg
     const availableImages = ['/authbg1.svg', '/authbg2.svg'];
     
     // Map products to one of the 2 images based on product ID hash
@@ -23,23 +30,30 @@ const ProductPageImage = ({ productId, className = '' }: ProductPageImageProps) 
     return availableImages[imageIndex];
   };
 
-  const imageSrc = getProductImage(productId);
+  const imageSrc = getProductImage(productId, imageIndex);
+
+  const getImageDimensions = (size: string) => {
+    switch (size) {
+      case 'small':
+        return { width: 200, height: 200 };
+      case 'medium':
+        return { width: 300, height: 300 };
+      default:
+        return { width: 400, height: 400 };
+    }
+  };
+
+  const { width, height } = getImageDimensions(size);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className={`flex items-center justify-center ${className}`}
-    >
-      <Image
-        src={imageSrc}
-        alt="Product image"
-        width={400}
-        height={400}
-        className="w-full h-full object-contain max-w-none"
-        priority={false}
-      />
-    </motion.div>
+    <Image
+      src={imageSrc}
+      alt="Product image"
+      width={width}
+      height={height}
+      className={`w-full h-full object-cover ${className}`}
+      priority={false}
+    />
   );
 };
 

@@ -19,6 +19,7 @@ import { Separator } from '@/components/ui/separator';
 import { useCartStore } from '@/lib/store';
 import { products } from '@/data/products.json';
 import ProductPageImage from '@/components/common/ProductPageImage';
+import ProductThumbnailImage from '@/components/common/ProductThumbnailImage';
 import ProductCard from '@/components/product/ProductCard';
 import Layout from '@/components/layout/Layout';
 import Link from 'next/link';
@@ -95,6 +96,7 @@ const ProductPageClient = ({ productId }: { productId: string }) => {
               <div className="aspect-square bg-gray-50 rounded-xl overflow-hidden flex items-center justify-center p-2">
                 <ProductPageImage
                   productId={product.id}
+                  imageIndex={selectedImage}
                   className="w-full h-full"
                 />
               </div>
@@ -109,8 +111,8 @@ const ProductPageClient = ({ productId }: { productId: string }) => {
                       selectedImage === index ? 'ring-2 ring-primary' : 'hover:bg-gray-100'
                     }`}
                   >
-                    <ProductPageImage
-                      productId={product.id}
+                    <ProductThumbnailImage
+                      index={index}
                       className="w-full h-full"
                     />
                   </div>
